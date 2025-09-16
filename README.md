@@ -3,9 +3,7 @@
 This project demonstrates how to monitor **heart rate** using a **mmWave sensor** with the **ESP32-C6 kit**, built on **ESP-IDF**.  
 It was migrated from an Arduino IDE prototype to a fully IDF-based workflow for better control, stability, and scalability.
 
-<p align="center">
-  <img src="https://s1.ezgif.com/tmp/ezgif-1007165549ed3b.gif" alt="mmWave heart rate demo" width="500"/>
-</p>
+[![mmwave.gif](https://i.postimg.cc/Y2YYddLD/mmwave.gif)](https://postimg.cc/z3DyBSjT)
 
 ## ✨ Features
 - Heart rate monitoring with mmWave radar sensor  
