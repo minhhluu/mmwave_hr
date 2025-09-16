@@ -1,0 +1,112 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c6
+NOTICE: Skipping optional dependency: espressif/esp-sr
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/esp-sr
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/esp-sr
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/esp-sr
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espressif/esp-sr
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/esp-dsp": "1.4.12" -> "1.7.0"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 28 dependencies:
+NOTICE: [1/28] chmorgan/esp-libhelix-mp3 (1.0.3)
+NOTICE: [2/28] espressif/arduino-esp32 (3.3.0~1)
+NOTICE: [3/28] espressif/cbor (0.6.0~1)
+NOTICE: [4/28] espressif/esp-dsp (1.4.12)
+NOTICE: [5/28] espressif/esp-modbus (1.0.18)
+NOTICE: [6/28] espressif/esp-serial-flasher (0.0.11)
+NOTICE: [7/28] espressif/esp-sr (1.9.5)
+NOTICE: [8/28] espressif/esp-zboss-lib (1.6.4)
+NOTICE: [9/28] espressif/esp-zigbee-lib (1.6.5)
+NOTICE: [10/28] espressif/esp_diag_data_store (1.0.2)
+NOTICE: [11/28] espressif/esp_diagnostics (1.2.1)
+NOTICE: [12/28] espressif/esp_insights (1.2.2)
+NOTICE: [13/28] espressif/esp_modem (1.4.0)
+NOTICE: [14/28] espressif/esp_rainmaker (1.5.2)
+NOTICE: [15/28] espressif/esp_rcp_update (1.2.0)
+NOTICE: [16/28] espressif/esp_schedule (1.2.0)
+NOTICE: [17/28] espressif/esp_secure_cert_mgr (2.6.0)
+NOTICE: [18/28] espressif/jsmn (1.1.0)
+NOTICE: [19/28] espressif/json_generator (1.1.2)
+NOTICE: [20/28] espressif/json_parser (1.0.3)
+NOTICE: [21/28] espressif/led_strip (3.0.1~1)
+NOTICE: [22/28] espressif/libsodium (1.0.20~2)
+NOTICE: [23/28] espressif/mdns (1.8.2)
+NOTICE: [24/28] espressif/network_provisioning (1.0.2)
+NOTICE: [25/28] espressif/qrcode (0.1.0~2)
+NOTICE: [26/28] espressif/rmaker_common (1.4.6)
+NOTICE: [27/28] joltwallet/littlefs (1.20.1)
+NOTICE: [28/28] idf (5.4.0)
+-- DEBUG: Use esp-modbus component folder: /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-modbus.
+NOTICE: Skipping optional dependency: espressif/esp-sr
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+-- Project sdkconfig file /home/minhluu/esp/projects/mmwave_project/sdkconfig
+-- Adding linker script /home/minhluu/esp/esp-idf/components/riscv/ld/rom.api.ld
+-- App "mmwave_project" version: 1
+-- Adding linker script /home/minhluu/esp/projects/mmwave_project/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/minhluu/esp/projects/mmwave_project/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.api.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.rvfp.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.wdt.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.systimer.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.version.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.phy.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.coexist.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.net80211.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.pp.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib-normal.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.heap.ld
+-- Adding linker script /home/minhluu/esp/esp-idf/components/soc/esp32c6/ld/esp32c6.peripherals.ld
+-- DEBUG: Use esp-modbus component folder: /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-modbus.
+-- git rev-parse returned 'fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).'
+-- git rev-parse returned 'fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).'
+-- Components: app_trace app_update bootloader bootloader_support bt chmorgan__esp-libhelix-mp3 cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__arduino-esp32 espressif__cbor espressif__esp-dsp espressif__esp-modbus espressif__esp-serial-flasher espressif__esp-sr espressif__esp-zboss-lib espressif__esp-zigbee-lib espressif__esp_diag_data_store espressif__esp_diagnostics espressif__esp_insights espressif__esp_modem espressif__esp_rainmaker espressif__esp_rcp_update espressif__esp_schedule espressif__esp_secure_cert_mgr espressif__jsmn espressif__json_generator espressif__json_parser espressif__led_strip espressif__libsodium espressif__mdns espressif__network_provisioning espressif__qrcode espressif__rmaker_common esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 joltwallet__littlefs json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /home/minhluu/esp/esp-idf/components/app_trace /home/minhluu/esp/esp-idf/components/app_update /home/minhluu/esp/esp-idf/components/bootloader /home/minhluu/esp/esp-idf/components/bootloader_support /home/minhluu/esp/esp-idf/components/bt /home/minhluu/esp/projects/mmwave_project/managed_components/chmorgan__esp-libhelix-mp3 /home/minhluu/esp/esp-idf/components/cmock /home/minhluu/esp/esp-idf/components/console /home/minhluu/esp/esp-idf/components/cxx /home/minhluu/esp/esp-idf/components/driver /home/minhluu/esp/esp-idf/components/efuse /home/minhluu/esp/esp-idf/components/esp-tls /home/minhluu/esp/esp-idf/components/esp_adc /home/minhluu/esp/esp-idf/components/esp_app_format /home/minhluu/esp/esp-idf/components/esp_bootloader_format /home/minhluu/esp/esp-idf/components/esp_coex /home/minhluu/esp/esp-idf/components/esp_common /home/minhluu/esp/esp-idf/components/esp_driver_ana_cmpr /home/minhluu/esp/esp-idf/components/esp_driver_cam /home/minhluu/esp/esp-idf/components/esp_driver_dac /home/minhluu/esp/esp-idf/components/esp_driver_gpio /home/minhluu/esp/esp-idf/components/esp_driver_gptimer /home/minhluu/esp/esp-idf/components/esp_driver_i2c /home/minhluu/esp/esp-idf/components/esp_driver_i2s /home/minhluu/esp/esp-idf/components/esp_driver_isp /home/minhluu/esp/esp-idf/components/esp_driver_jpeg /home/minhluu/esp/esp-idf/components/esp_driver_ledc /home/minhluu/esp/esp-idf/components/esp_driver_mcpwm /home/minhluu/esp/esp-idf/components/esp_driver_parlio /home/minhluu/esp/esp-idf/components/esp_driver_pcnt /home/minhluu/esp/esp-idf/components/esp_driver_ppa /home/minhluu/esp/esp-idf/components/esp_driver_rmt /home/minhluu/esp/esp-idf/components/esp_driver_sdio /home/minhluu/esp/esp-idf/components/esp_driver_sdm /home/minhluu/esp/esp-idf/components/esp_driver_sdmmc /home/minhluu/esp/esp-idf/components/esp_driver_sdspi /home/minhluu/esp/esp-idf/components/esp_driver_spi /home/minhluu/esp/esp-idf/components/esp_driver_touch_sens /home/minhluu/esp/esp-idf/components/esp_driver_tsens /home/minhluu/esp/esp-idf/components/esp_driver_uart /home/minhluu/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/minhluu/esp/esp-idf/components/esp_eth /home/minhluu/esp/esp-idf/components/esp_event /home/minhluu/esp/esp-idf/components/esp_gdbstub /home/minhluu/esp/esp-idf/components/esp_hid /home/minhluu/esp/esp-idf/components/esp_http_client /home/minhluu/esp/esp-idf/components/esp_http_server /home/minhluu/esp/esp-idf/components/esp_https_ota /home/minhluu/esp/esp-idf/components/esp_https_server /home/minhluu/esp/esp-idf/components/esp_hw_support /home/minhluu/esp/esp-idf/components/esp_lcd /home/minhluu/esp/esp-idf/components/esp_local_ctrl /home/minhluu/esp/esp-idf/components/esp_mm /home/minhluu/esp/esp-idf/components/esp_netif /home/minhluu/esp/esp-idf/components/esp_netif_stack /home/minhluu/esp/esp-idf/components/esp_partition /home/minhluu/esp/esp-idf/components/esp_phy /home/minhluu/esp/esp-idf/components/esp_pm /home/minhluu/esp/esp-idf/components/esp_psram /home/minhluu/esp/esp-idf/components/esp_ringbuf /home/minhluu/esp/esp-idf/components/esp_rom /home/minhluu/esp/esp-idf/components/esp_security /home/minhluu/esp/esp-idf/components/esp_system /home/minhluu/esp/esp-idf/components/esp_timer /home/minhluu/esp/esp-idf/components/esp_vfs_console /home/minhluu/esp/esp-idf/components/esp_wifi /home/minhluu/esp/esp-idf/components/espcoredump /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32 /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__cbor /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-dsp /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-modbus /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-serial-flasher /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-sr /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-zboss-lib /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp-zigbee-lib /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_diag_data_store /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_diagnostics /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_insights /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_modem /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_rainmaker /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_rcp_update /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_schedule /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__esp_secure_cert_mgr /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__jsmn /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__json_generator /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__json_parser /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__led_strip /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__libsodium /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__mdns /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__network_provisioning /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__qrcode /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__rmaker_common /home/minhluu/esp/esp-idf/components/esptool_py /home/minhluu/esp/esp-idf/components/fatfs /home/minhluu/esp/esp-idf/components/freertos /home/minhluu/esp/esp-idf/components/hal /home/minhluu/esp/esp-idf/components/heap /home/minhluu/esp/esp-idf/components/http_parser /home/minhluu/esp/esp-idf/components/idf_test /home/minhluu/esp/esp-idf/components/ieee802154 /home/minhluu/esp/projects/mmwave_project/managed_components/joltwallet__littlefs /home/minhluu/esp/esp-idf/components/json /home/minhluu/esp/esp-idf/components/log /home/minhluu/esp/esp-idf/components/lwip /home/minhluu/esp/projects/mmwave_project/main /home/minhluu/esp/esp-idf/components/mbedtls /home/minhluu/esp/esp-idf/components/mqtt /home/minhluu/esp/esp-idf/components/newlib /home/minhluu/esp/esp-idf/components/nvs_flash /home/minhluu/esp/esp-idf/components/nvs_sec_provider /home/minhluu/esp/esp-idf/components/openthread /home/minhluu/esp/esp-idf/components/partition_table /home/minhluu/esp/esp-idf/components/protobuf-c /home/minhluu/esp/esp-idf/components/protocomm /home/minhluu/esp/esp-idf/components/pthread /home/minhluu/esp/esp-idf/components/riscv /home/minhluu/esp/esp-idf/components/rt /home/minhluu/esp/esp-idf/components/sdmmc /home/minhluu/esp/esp-idf/components/soc /home/minhluu/esp/esp-idf/components/spi_flash /home/minhluu/esp/esp-idf/components/spiffs /home/minhluu/esp/esp-idf/components/tcp_transport /home/minhluu/esp/esp-idf/components/ulp /home/minhluu/esp/esp-idf/components/unity /home/minhluu/esp/esp-idf/components/usb /home/minhluu/esp/esp-idf/components/vfs /home/minhluu/esp/esp-idf/components/wear_levelling /home/minhluu/esp/esp-idf/components/wifi_provisioning /home/minhluu/esp/esp-idf/components/wpa_supplicant
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/minhluu/esp/projects/mmwave_project/build
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/minhluu/esp/projects/mmwave_project/build/bootloader/esp-idf/esptool_py && /home/minhluu/.espressif/python_env/idf5.4_py3.11_env/bin/python /home/minhluu/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/minhluu/esp/projects/mmwave_project/build/bootloader/bootloader.bin
+Bootloader binary size 0x55e0 bytes. 0x2a20 bytes (33%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/mmwave_project.cpp.obj
+In file included from /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/Seeed_Arduino_mmWave.h:17,
+                 from /home/minhluu/esp/projects/mmwave_project/main/mmwave_project.cpp:92:
+/home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/SEEED_MR60BHA2.h:53:1: warning: 'typedef' was ignored in this declaration
+   53 | typedef union FirmwareInfo {
+      | ^~~~~~~
+/home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/SEEED_MR60BHA2.h:65:33: warning: missing initializer for member 'HeartBreath::breath_phase' [-Wmissing-field-initializers]
+   65 |   HeartBreath _heart_breath = {0};
+      |                                 ^
+/home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/SEEED_MR60BHA2.h:65:33: warning: missing initializer for member 'HeartBreath::heart_phase' [-Wmissing-field-initializers]
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable mmwave_project.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /home/minhluu/esp/projects/mmwave_project/build/mmwave_project.bin
+[9/9] cd /home/minhluu/esp/projects/mmwave_project/build/esp-idf/esptool_py && /home/minhluu/.espressif/python_env/idf5.4_py3.11_env/bin/python /home/minhluu/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/minhluu/esp/projects/mmwave_project/build/partition_table/partition-table.bin /home/minhluu/esp/projects/mmwave_project/build/mmwave_project.bin
+mmwave_project.bin binary size 0x2e210 bytes. Smallest app partition is 0x100000 bytes. 0xd1df0 bytes (82%) free.

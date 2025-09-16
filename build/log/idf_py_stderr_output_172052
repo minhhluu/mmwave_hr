@@ -1,0 +1,20 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40022ef4: uart_rx_readbuff in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200cd6a: SeeedmmWave::fetch(unsigned long) at /home/minhluu/esp/projects/mmwave_project/main/src/mmWave/SeeedmmWave.cpp:354
+--- 0x4200cd64: SeeedmmWave::fetch(unsigned long) at /home/minhluu/esp/projects/mmwave_project/main/src/mmWave/SeeedmmWave.cpp:392 (discriminator 1)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/minhluu/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40807e4e: vPortClearInterruptMaskFromISR at /home/minhluu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:510
+--- 0x40807ee0: vPortExitCritical at /home/minhluu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:623
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/minhluu/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0m

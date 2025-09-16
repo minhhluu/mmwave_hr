@@ -1,0 +1,456 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x7f (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400228d8
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x304c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Sep 11 2025 13:07:54[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42028020 size=0d06ch ( 53356) map[0m
+[0;32mI (92) esp_image: segment 1: paddr=0001d094 vaddr=40800000 size=02f84h ( 12164) load[0m
+[0;32mI (95) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=21750h (137040) map[0m
+[0;32mI (122) esp_image: segment 3: paddr=00041778 vaddr=40802f84 size=0b6a8h ( 46760) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0004ce28 vaddr=4080e630 size=01c60h (  7264) load[0m
+[0;32mI (139) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (159) app_init: Application information:[0m
+[0;32mI (160) app_init: Project name:     mmwave_project[0m
+[0;32mI (164) app_init: App version:      1[0m
+[0;32mI (167) app_init: Compile time:     Sep 11 2025 13:07:51[0m
+[0;32mI (172) app_init: ELF file SHA256:  13220e0e1...[0m
+[0;32mI (176) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (181) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (184) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 40811A00 len 0006AC10 (427 KiB): RAM[0m
+[0;32mI (204) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (209) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (215) spi_flash: detected chip: generic[0m
+[0;32mI (218) spi_flash: flash io: dio[0m
+[0;33mW (221) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (233) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (239) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (246) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (250) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (255) main_task: Started on CPU0[0m
+[0;32mI (255) main_task: Calling app_main()[0m
+[0;32mI (265) uart: queue free spaces: 10[0m
+[0;32mI (265) mmWave_feature: Starting app...[0m
+Arduino setup done!
+[0;32mI (265) uart: queue free spaces: 20[0m
+[0;32mI (265) mmWave_feature: mmWave sensor initialized[0m
+[0;32mI (265) uart: queue free spaces: 20[0m
+[0;32mI (365) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (365) mmWave_feature: ----- No one here -----[0m
+[0;32mI (365) mmWave_feature: Main task running[0m
+[0;32mI (555) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (555) mmWave_feature: ----- No one here -----[0m
+[0;32mI (755) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (765) mmWave_feature: ----- No one here -----[0m
+[0;32mI (955) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (965) mmWave_feature: ----- No one here -----[0m
+[0;32mI (1155) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (1155) mmWave_feature: ----- No one here -----[0m
+[0;32mI (1355) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (1365) mmWave_feature: ----- No one here -----[0m
+[0;32mI (1555) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (1565) mmWave_feature: ----- No one here -----[0m
+[0;32mI (1755) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (1755) mmWave_feature: ----- No one here -----[0m
+[0;32mI (1955) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (1965) mmWave_feature: ----- No one here -----[0m
+[0;32mI (2155) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (2165) mmWave_feature: ----- No one here -----[0m
+[0;32mI (2355) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (2355) mmWave_feature: ----- No one here -----[0m
+[0;32mI (2555) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (2565) mmWave_feature: ----- No one here -----[0m
+[0;32mI (2755) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (2765) mmWave_feature: ----- No one here -----[0m
+[0;32mI (2955) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (2955) mmWave_feature: ----- No one here -----[0m
+[0;32mI (3155) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (3165) mmWave_feature: ----- No one here -----[0m
+[0;32mI (3355) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (3365) mmWave_feature: ----- No one here -----[0m
+[0;32mI (3555) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (3555) mmWave_feature: ----- No one here -----[0m
+[0;32mI (3755) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (3765) mmWave_feature: ----- No one here -----[0m
+[0;32mI (3955) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (3965) mmWave_feature: ----- No one here -----[0m
+[0;32mI (4155) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (4155) mmWave_feature: ----- No one here -----[0m
+[0;32mI (4355) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (4365) mmWave_feature: ----- No one here -----[0m
+[0;32mI (4555) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (4565) mmWave_feature: ----- No one here -----[0m
+[0;32mI (4755) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (4755) mmWave_feature: ----- No one here -----[0m
+[0;32mI (4955) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (4955) mmWave_feature: ----- No one here -----[0m
+[0;32mI (5155) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (5165) mmWave_feature: ----- No one here -----[0m
+[0;32mI (5355) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (5375) mmWave_feature: Main task running[0m
+[0;32mI (5555) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (5755) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (5955) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (6145) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (6345) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (6545) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (6735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (6745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (6935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (6935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (7135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (7145) mmWave_feature: ----- No one here -----[0m
+[0;32mI (7335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (7535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (7735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (7935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (8135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (8135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (8335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (8345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (8535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (8545) mmWave_feature: ----- No one here -----[0m
+[0;32mI (8735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (8935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (9135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (9335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (9335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (9535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (9545) mmWave_feature: ----- No one here -----[0m
+[0;32mI (9735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (9745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (9935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (9935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (10135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (10145) mmWave_feature: ----- No one here -----[0m
+[0;32mI (10335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (10345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (10375) mmWave_feature: Main task running[0m
+[0;32mI (10535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (10535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (10735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (10745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (10935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (10945) mmWave_feature: ----- No one here -----[0m
+[0;32mI (11135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (11135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (11335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (11345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (11535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (11545) mmWave_feature: ----- No one here -----[0m
+[0;32mI (11735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (11745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (11935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (11935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (12135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (12145) mmWave_feature: ----- No one here -----[0m
+[0;32mI (12335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (12345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (12535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (12535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (12735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (12745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (12935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (12945) mmWave_feature: ----- No one here -----[0m
+[0;32mI (13135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (13135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (13335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (13345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (13535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (13545) mmWave_feature: ----- No one here -----[0m
+[0;32mI (13735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (13735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (13935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (13945) mmWave_feature: ----- No one here -----[0m
+[0;32mI (14135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (14145) mmWave_feature: ----- No one here -----[0m
+[0;32mI (14335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (14335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (14535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (14545) mmWave_feature: ----- No one here -----[0m
+[0;32mI (14735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (14745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (14935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (14935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (15145) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (15145) mmWave_feature: ----- No one here -----[0m
+[0;32mI (15335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (15345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (15375) mmWave_feature: Main task running[0m
+[0;32mI (15535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (15535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (15735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (15735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (15935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (15945) mmWave_feature: ----- No one here -----[0m
+[0;32mI (16135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (16145) mmWave_feature: ----- No one here -----[0m
+[0;32mI (16335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (16335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (16535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (16545) mmWave_feature: ----- No one here -----[0m
+[0;32mI (16735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (16745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (16935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (16935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (17135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (17145) mmWave_feature: ----- No one here -----[0m
+[0;32mI (17335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (17345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (17535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (17535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (17735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (17745) mmWave_feature: ----- No one here -----[0m
+[0;32mI (17935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (17945) mmWave_feature: ----- No one here -----[0m
+[0;32mI (18135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (18135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (18335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (18345) mmWave_feature: ----- No one here -----[0m
+[0;32mI (18535) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (18735) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (18935) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (19135) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (19325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (19525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (19725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (19725) mmWave_feature: ----- No one here -----[0m
+[0;32mI (19925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (19935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (20125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (20135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (20325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (20325) mmWave_feature: ----- No one here -----[0m
+[0;32mI (20375) mmWave_feature: Main task running[0m
+[0;32mI (20525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (20535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (20725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (20735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (20925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (20925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (21125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (21135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (21325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (21335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (21525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (21525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (21725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (21735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (21925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (21935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (22125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (22125) mmWave_feature: ----- No one here -----[0m
+[0;32mI (22325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (22335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (22525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (22535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (22725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (22725) mmWave_feature: ----- No one here -----[0m
+[0;32mI (22925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (22935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (23125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (23135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (23325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (23325) mmWave_feature: ----- No one here -----[0m
+[0;32mI (23525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (23535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (23725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (23735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (23925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (23925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (24125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (24135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (24325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (24335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (24525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (24525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (24725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (24735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (24925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (24935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (25125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (25125) mmWave_feature: ----- No one here -----[0m
+[0;32mI (25325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (25335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (25375) mmWave_feature: Main task running[0m
+[0;32mI (25525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (25535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (25725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (25735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (25925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (25925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (26125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (26135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (26335) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (26335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (26525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (26525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (26725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (26735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (26925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (26935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (27125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (27125) mmWave_feature: ----- No one here -----[0m
+[0;32mI (27325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (27335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (27525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (27535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (27725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (27725) mmWave_feature: ----- No one here -----[0m
+[0;32mI (27925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (27935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (28125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (28135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (28325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (28325) mmWave_feature: ----- No one here -----[0m
+[0;32mI (28525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (28535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (28725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (28735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (28925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (28925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (29125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (29135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (29325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (29335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (29525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (29525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (29725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (29735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (29925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (29935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (30125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (30125) mmWave_feature: ----- No one here -----[0m
+[0;32mI (30325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (30335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (30375) mmWave_feature: Main task running[0m
+[0;32mI (30525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (30535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (30725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (30735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (30925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (30925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (31125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (31135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (31325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (31335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (31525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (31525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (31725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (31735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (31925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (31935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (32125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (32125) mmWave_feature: ----- No one here -----[0m
+[0;32mI (32325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (32335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (32525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (32535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (32725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (32725) mmWave_feature: ----- No one here -----[0m
+[0;32mI (32925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (32935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (33125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (33135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (33325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (33325) mmWave_feature: ----- No one here -----[0m
+[0;32mI (33525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (33535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (33725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (33735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (33925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (33925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (34135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (34335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (34525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (34725) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (34935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (35135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (35325) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35375) mmWave_feature: Main task running[0m
+[0;32mI (35525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (35535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (35735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (35925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (36135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (36335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (36525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (36735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (36935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (37125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (37125) mmWave_feature: ----- No one here -----[0m
+[0;32mI (37325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (37335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (37525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (37535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (37725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (37725) mmWave_feature: ----- No one here -----[0m
+[0;32mI (37925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (37935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (38125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (38135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (38325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (38325) mmWave_feature: ----- No one here -----[0m
+[0;32mI (38525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (38535) mmWave_feature: ----- No one here -----[0m
+[0;32mI (38725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (38735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (38925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (38925) mmWave_feature: ----- No one here -----[0m
+[0;32mI (39125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (39135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (39325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (39335) mmWave_feature: ----- No one here -----[0m
+[0;32mI (39525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (39525) mmWave_feature: ----- No one here -----[0m
+[0;32mI (39725) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (39735) mmWave_feature: ----- No one here -----[0m
+[0;32mI (39925) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (39935) mmWave_feature: ----- No one here -----[0m
+[0;32mI (40125) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (40135) mmWave_feature: ----- No one here -----[0m
+[0;32mI (40325) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (40325) mmWave_feature: ----- No one here -----[0m
+[0;32mI (40375) mmWave_feature: Main task running[0m
+[0;32mI (40525) mmWave_feature: ----- Human Detected-----[0m
+[0;32mI (40535) mmWave_feature: ----- No one here -----[0m
+IIIIIIIIIII

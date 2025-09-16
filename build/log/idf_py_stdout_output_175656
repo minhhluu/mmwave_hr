@@ -1,0 +1,663 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x7f (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4002f478
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x304c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Sep 11 2025 13:07:54[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42028020 size=0d010h ( 53264) map[0m
+[0;32mI (92) esp_image: segment 1: paddr=0001d038 vaddr=40800000 size=02fe0h ( 12256) load[0m
+[0;32mI (95) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=215e4h (136676) map[0m
+[0;32mI (122) esp_image: segment 3: paddr=0004160c vaddr=40802fe0 size=0b64ch ( 46668) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0004cc60 vaddr=4080e630 size=01c60h (  7264) load[0m
+[0;32mI (138) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (159) app_init: Application information:[0m
+[0;32mI (160) app_init: Project name:     mmwave_project[0m
+[0;32mI (163) app_init: App version:      1[0m
+[0;32mI (167) app_init: Compile time:     Sep 11 2025 13:07:51[0m
+[0;32mI (172) app_init: ELF file SHA256:  672b8b63e...[0m
+[0;32mI (176) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (184) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 40811A00 len 0006AC10 (427 KiB): RAM[0m
+[0;32mI (203) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (209) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (215) spi_flash: detected chip: generic[0m
+[0;32mI (218) spi_flash: flash io: dio[0m
+[0;33mW (221) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (233) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (239) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (246) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (250) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (254) main_task: Started on CPU0[0m
+[0;32mI (254) main_task: Calling app_main()[0m
+[0;32mI (264) uart: queue free spaces: 10[0m
+[0;32mI (264) mmWave_feature: Starting app...[0m
+Arduino setup done!
+[0;32mI (264) uart: queue free spaces: 20[0m
+[0;32mI (264) mmWave_feature: mmWave sensor initialized[0m
+[0;32mI (364) mmWave_feature: HR_Filtered: 59.00[0m
+[0;32mI (1124) mmWave_feature: HR_Filtered: 59.00[0m
+[0;32mI (1894) mmWave_feature: HR_Filtered: 59.00[0m
+[0;32mI (2274) mmWave_feature: HR_Filtered: 59.25[0m
+[0;32mI (2854) mmWave_feature: HR_Filtered: 59.40[0m
+[0;32mI (3434) mmWave_feature: HR_Filtered: 59.50[0m
+[0;32mI (4204) mmWave_feature: HR_Filtered: 59.57[0m
+[0;32mI (4784) mmWave_feature: HR_Filtered: 59.62[0m
+[0;32mI (5364) mmWave_feature: HR_Filtered: 59.56[0m
+[0;32mI (5944) mmWave_feature: HR_Filtered: 59.60[0m
+[0;32mI (6524) mmWave_feature: HR_Filtered: 59.70[0m
+[0;32mI (7294) mmWave_feature: HR_Filtered: 59.80[0m
+[0;32mI (7874) mmWave_feature: HR_Filtered: 59.80[0m
+[0;32mI (8644) mmWave_feature: HR_Filtered: 59.80[0m
+[0;32mI (9034) mmWave_feature: HR_Filtered: 59.70[0m
+[0;32mI (9614) mmWave_feature: HR_Filtered: 59.50[0m
+[0;32mI (10384) mmWave_feature: HR_Filtered: 59.20[0m
+[0;32mI (10964) mmWave_feature: HR_Filtered: 59.00[0m
+[0;32mI (11734) mmWave_feature: HR_Filtered: 58.90[0m
+[0;32mI (12124) mmWave_feature: HR_Filtered: 58.80[0m
+[0;32mI (12904) mmWave_feature: HR_Filtered: 59.10[0m
+[0;32mI (13474) mmWave_feature: HR_Filtered: 59.70[0m
+[0;32mI (14044) mmWave_feature: HR_Filtered: 60.70[0m
+[0;32mI (14624) mmWave_feature: HR_Filtered: 61.80[0m
+[0;32mI (15214) mmWave_feature: HR_Filtered: 63.30[0m
+[0;32mI (15784) mmWave_feature: HR_Filtered: 65.20[0m
+[0;32mI (16554) mmWave_feature: HR_Filtered: 67.30[0m
+[0;32mI (17504) mmWave_feature: HR_Filtered: 69.40[0m
+[0;32mI (17704) mmWave_feature: HR_Filtered: 71.60[0m
+[0;32mI (18284) mmWave_feature: HR_Filtered: 73.90[0m
+[0;32mI (18864) mmWave_feature: HR_Filtered: 75.90[0m
+[0;32mI (19444) mmWave_feature: HR_Filtered: 77.70[0m
+[0;32mI (20214) mmWave_feature: HR_Filtered: 79.30[0m
+[0;32mI (20984) mmWave_feature: HR_Filtered: 80.70[0m
+[0;32mI (21364) mmWave_feature: HR_Filtered: 81.80[0m
+[0;32mI (21944) mmWave_feature: HR_Filtered: 82.60[0m
+[0;32mI (22524) mmWave_feature: HR_Filtered: 83.40[0m
+[0;32mI (23294) mmWave_feature: HR_Filtered: 84.20[0m
+[0;32mI (23874) mmWave_feature: HR_Filtered: 85.00[0m
+[0;32mI (24454) mmWave_feature: HR_Filtered: 85.70[0m
+[0;32mI (25034) mmWave_feature: HR_Filtered: 86.40[0m
+[0;32mI (25614) mmWave_feature: HR_Filtered: 87.00[0m
+[0;32mI (26194) mmWave_feature: HR_Filtered: 87.50[0m
+[0;32mI (26964) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (27544) mmWave_feature: HR_Filtered: 88.30[0m
+[0;32mI (28124) mmWave_feature: HR_Filtered: 88.60[0m
+[0;32mI (28704) mmWave_feature: HR_Filtered: 88.90[0m
+[0;32mI (29284) mmWave_feature: HR_Filtered: 88.90[0m
+[0;32mI (29864) mmWave_feature: HR_Filtered: 88.70[0m
+[0;32mI (30444) mmWave_feature: HR_Filtered: 88.30[0m
+[0;32mI (31024) mmWave_feature: HR_Filtered: 87.80[0m
+[0;32mI (31794) mmWave_feature: HR_Filtered: 87.20[0m
+[0;32mI (32374) mmWave_feature: HR_Filtered: 86.60[0m
+[0;32mI (32954) mmWave_feature: HR_Filtered: 86.00[0m
+[0;32mI (33534) mmWave_feature: HR_Filtered: 85.50[0m
+[0;32mI (33734) mmWave_feature: ----- No one here -----[0m
+[0;32mI (33934) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34134) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34324) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34524) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34724) mmWave_feature: ----- No one here -----[0m
+[0;32mI (34914) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35114) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35314) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35504) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35704) mmWave_feature: ----- No one here -----[0m
+[0;32mI (35904) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36094) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36294) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36494) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36684) mmWave_feature: ----- No one here -----[0m
+[0;32mI (36884) mmWave_feature: ----- No one here -----[0m
+[0;32mI (37074) mmWave_feature: HR_Filtered: 84.00[0m
+[0;32mI (37654) mmWave_feature: HR_Filtered: 82.40[0m
+[0;32mI (38804) mmWave_feature: HR_Filtered: 81.00[0m
+[0;32mI (38994) mmWave_feature: HR_Filtered: 80.00[0m
+[0;32mI (39574) mmWave_feature: HR_Filtered: 79.50[0m
+[0;32mI (40344) mmWave_feature: HR_Filtered: 79.40[0m
+[0;32mI (40924) mmWave_feature: HR_Filtered: 79.60[0m
+[0;32mI (41494) mmWave_feature: HR_Filtered: 80.00[0m
+[0;32mI (42074) mmWave_feature: HR_Filtered: 80.60[0m
+[0;32mI (42654) mmWave_feature: HR_Filtered: 81.40[0m
+[0;32mI (43234) mmWave_feature: HR_Filtered: 83.20[0m
+[0;32mI (43814) mmWave_feature: HR_Filtered: 85.00[0m
+[0;32mI (44394) mmWave_feature: HR_Filtered: 86.80[0m
+[0;32mI (45164) mmWave_feature: HR_Filtered: 88.40[0m
+[0;32mI (45934) mmWave_feature: HR_Filtered: 89.70[0m
+[0;32mI (46314) mmWave_feature: HR_Filtered: 90.60[0m
+[0;32mI (46894) mmWave_feature: HR_Filtered: 91.20[0m
+[0;32mI (47664) mmWave_feature: HR_Filtered: 91.60[0m
+[0;32mI (48234) mmWave_feature: HR_Filtered: 91.80[0m
+[0;32mI (48814) mmWave_feature: HR_Filtered: 91.80[0m
+[0;32mI (49394) mmWave_feature: HR_Filtered: 91.70[0m
+[0;32mI (49974) mmWave_feature: HR_Filtered: 91.30[0m
+[0;32mI (50554) mmWave_feature: HR_Filtered: 90.70[0m
+[0;32mI (51704) mmWave_feature: HR_Filtered: 89.80[0m
+[0;32mI (51894) mmWave_feature: HR_Filtered: 88.60[0m
+[0;32mI (52664) mmWave_feature: HR_Filtered: 87.20[0m
+[0;32mI (53244) mmWave_feature: HR_Filtered: 85.80[0m
+[0;32mI (54004) mmWave_feature: HR_Filtered: 84.20[0m
+[0;32mI (54394) mmWave_feature: HR_Filtered: 82.40[0m
+[0;32mI (55164) mmWave_feature: HR_Filtered: 80.60[0m
+[0;32mI (55744) mmWave_feature: HR_Filtered: 78.80[0m
+[0;32mI (56134) mmWave_feature: HR_Filtered: 77.20[0m
+[0;32mI (56724) mmWave_feature: HR_Filtered: 75.70[0m
+[0;32mI (57494) mmWave_feature: HR_Filtered: 74.30[0m
+[0;32mI (58074) mmWave_feature: HR_Filtered: 73.00[0m
+[0;32mI (58654) mmWave_feature: HR_Filtered: 71.80[0m
+[0;32mI (59234) mmWave_feature: HR_Filtered: 70.60[0m
+[0;32mI (59814) mmWave_feature: HR_Filtered: 69.50[0m
+[0;32mI (60394) mmWave_feature: HR_Filtered: 68.60[0m
+[0;32mI (60974) mmWave_feature: HR_Filtered: 67.70[0m
+[0;32mI (61934) mmWave_feature: HR_Filtered: 66.90[0m
+[0;32mI (62314) mmWave_feature: HR_Filtered: 66.20[0m
+[0;32mI (62894) mmWave_feature: HR_Filtered: 65.60[0m
+[0;32mI (63474) mmWave_feature: HR_Filtered: 65.20[0m
+[0;32mI (64244) mmWave_feature: HR_Filtered: 65.20[0m
+[0;32mI (65204) mmWave_feature: HR_Filtered: 65.70[0m
+[0;32mI (65404) mmWave_feature: HR_Filtered: 66.50[0m
+[0;32mI (65984) mmWave_feature: HR_Filtered: 67.70[0m
+[0;32mI (66564) mmWave_feature: HR_Filtered: 69.10[0m
+[0;32mI (67144) mmWave_feature: HR_Filtered: 70.70[0m
+[0;32mI (67724) mmWave_feature: HR_Filtered: 72.50[0m
+[0;32mI (68494) mmWave_feature: HR_Filtered: 74.40[0m
+[0;32mI (69074) mmWave_feature: HR_Filtered: 76.40[0m
+[0;32mI (69654) mmWave_feature: HR_Filtered: 78.40[0m
+[0;32mI (70234) mmWave_feature: HR_Filtered: 80.10[0m
+[0;32mI (70824) mmWave_feature: HR_Filtered: 81.60[0m
+[0;32mI (71394) mmWave_feature: ----- No one here -----[0m
+[0;32mI (71594) mmWave_feature: ----- No one here -----[0m
+[0;32mI (71794) mmWave_feature: ----- No one here -----[0m
+[0;32mI (71984) mmWave_feature: ----- No one here -----[0m
+[0;32mI (72184) mmWave_feature: ----- No one here -----[0m
+[0;32mI (72384) mmWave_feature: ----- No one here -----[0m
+[0;32mI (72574) mmWave_feature: ----- No one here -----[0m
+[0;32mI (72774) mmWave_feature: ----- No one here -----[0m
+[0;32mI (72974) mmWave_feature: ----- No one here -----[0m
+[0;32mI (73164) mmWave_feature: ----- No one here -----[0m
+[0;32mI (73364) mmWave_feature: ----- No one here -----[0m
+[0;32mI (73564) mmWave_feature: ----- No one here -----[0m
+[0;32mI (73754) mmWave_feature: ----- No one here -----[0m
+[0;32mI (73954) mmWave_feature: ----- No one here -----[0m
+[0;32mI (74154) mmWave_feature: ----- No one here -----[0m
+[0;32mI (74344) mmWave_feature: ----- No one here -----[0m
+[0;32mI (74544) mmWave_feature: ----- No one here -----[0m
+[0;32mI (74734) mmWave_feature: ----- No one here -----[0m
+[0;32mI (74934) mmWave_feature: ----- No one here -----[0m
+[0;32mI (75134) mmWave_feature: ----- No one here -----[0m
+[0;32mI (75324) mmWave_feature: ----- No one here -----[0m
+[0;32mI (75524) mmWave_feature: ----- No one here -----[0m
+[0;32mI (75724) mmWave_feature: ----- No one here -----[0m
+[0;32mI (75914) mmWave_feature: ----- No one here -----[0m
+[0;32mI (76114) mmWave_feature: ----- No one here -----[0m
+[0;32mI (76314) mmWave_feature: ----- No one here -----[0m
+[0;32mI (76504) mmWave_feature: ----- No one here -----[0m
+[0;32mI (76704) mmWave_feature: ----- No one here -----[0m
+[0;32mI (76904) mmWave_feature: ----- No one here -----[0m
+[0;32mI (77094) mmWave_feature: ----- No one here -----[0m
+[0;32mI (77294) mmWave_feature: ----- No one here -----[0m
+[0;32mI (77494) mmWave_feature: ----- No one here -----[0m
+[0;32mI (77684) mmWave_feature: ----- No one here -----[0m
+[0;32mI (77884) mmWave_feature: ----- No one here -----[0m
+[0;32mI (78074) mmWave_feature: ----- No one here -----[0m
+[0;32mI (78274) mmWave_feature: ----- No one here -----[0m
+[0;32mI (78474) mmWave_feature: ----- No one here -----[0m
+[0;32mI (78664) mmWave_feature: ----- No one here -----[0m
+[0;32mI (78864) mmWave_feature: ----- No one here -----[0m
+[0;32mI (79064) mmWave_feature: HR_Filtered: 81.40[0m
+[0;32mI (79444) mmWave_feature: HR_Filtered: 81.00[0m
+[0;32mI (79824) mmWave_feature: HR_Filtered: 80.70[0m
+[0;32mI (80404) mmWave_feature: HR_Filtered: 80.60[0m
+[0;32mI (81174) mmWave_feature: HR_Filtered: 80.60[0m
+[0;32mI (81564) mmWave_feature: HR_Filtered: 80.60[0m
+[0;32mI (82704) mmWave_feature: HR_Filtered: 80.50[0m
+[0;32mI (82904) mmWave_feature: HR_Filtered: 80.40[0m
+[0;32mI (83674) mmWave_feature: HR_Filtered: 80.40[0m
+[0;32mI (84064) mmWave_feature: HR_Filtered: 80.30[0m
+[0;32mI (85594) mmWave_feature: HR_Filtered: 81.70[0m
+[0;32mI (85984) mmWave_feature: HR_Filtered: 83.10[0m
+[0;32mI (86564) mmWave_feature: HR_Filtered: 84.30[0m
+[0;32mI (87144) mmWave_feature: HR_Filtered: 85.30[0m
+[0;32mI (87724) mmWave_feature: HR_Filtered: 86.10[0m
+[0;32mI (88494) mmWave_feature: HR_Filtered: 86.60[0m
+[0;32mI (89064) mmWave_feature: HR_Filtered: 87.00[0m
+[0;32mI (89644) mmWave_feature: HR_Filtered: 87.20[0m
+[0;32mI (90604) mmWave_feature: HR_Filtered: 87.20[0m
+[0;32mI (90804) mmWave_feature: HR_Filtered: 87.00[0m
+[0;32mI (91384) mmWave_feature: HR_Filtered: 86.80[0m
+[0;32mI (91964) mmWave_feature: HR_Filtered: 86.40[0m
+[0;32mI (92734) mmWave_feature: HR_Filtered: 85.90[0m
+[0;32mI (93314) mmWave_feature: HR_Filtered: 85.20[0m
+[0;32mI (93894) mmWave_feature: HR_Filtered: 84.30[0m
+[0;32mI (94474) mmWave_feature: HR_Filtered: 83.50[0m
+[0;32mI (95054) mmWave_feature: HR_Filtered: 82.60[0m
+[0;32mI (95634) mmWave_feature: HR_Filtered: 81.70[0m
+[0;32mI (96404) mmWave_feature: HR_Filtered: 80.70[0m
+[0;32mI (96974) mmWave_feature: HR_Filtered: 79.60[0m
+[0;32mI (97554) mmWave_feature: HR_Filtered: 78.30[0m
+[0;32mI (98134) mmWave_feature: HR_Filtered: 76.90[0m
+[0;32mI (98714) mmWave_feature: HR_Filtered: 75.30[0m
+[0;32mI (99294) mmWave_feature: HR_Filtered: 73.60[0m
+[0;32mI (99874) mmWave_feature: HR_Filtered: 72.00[0m
+[0;32mI (100644) mmWave_feature: HR_Filtered: 70.70[0m
+[0;32mI (101224) mmWave_feature: HR_Filtered: 69.60[0m
+[0;32mI (101804) mmWave_feature: HR_Filtered: 68.80[0m
+[0;32mI (102574) mmWave_feature: HR_Filtered: 68.60[0m
+[0;32mI (102964) mmWave_feature: HR_Filtered: 68.80[0m
+[0;32mI (103734) mmWave_feature: HR_Filtered: 69.50[0m
+[0;32mI (104314) mmWave_feature: HR_Filtered: 70.60[0m
+[0;32mI (104894) mmWave_feature: HR_Filtered: 72.10[0m
+[0;32mI (105474) mmWave_feature: HR_Filtered: 74.00[0m
+[0;32mI (106054) mmWave_feature: HR_Filtered: 76.00[0m
+[0;32mI (106824) mmWave_feature: HR_Filtered: 77.80[0m
+[0;32mI (107394) mmWave_feature: HR_Filtered: 79.70[0m
+[0;32mI (107974) mmWave_feature: HR_Filtered: 81.40[0m
+[0;32mI (108564) mmWave_feature: HR_Filtered: 82.70[0m
+[0;32mI (109134) mmWave_feature: HR_Filtered: 83.80[0m
+[0;32mI (109714) mmWave_feature: HR_Filtered: 84.60[0m
+[0;32mI (110674) mmWave_feature: HR_Filtered: 85.20[0m
+[0;32mI (111064) mmWave_feature: HR_Filtered: 85.80[0m
+[0;32mI (111834) mmWave_feature: HR_Filtered: 86.30[0m
+[0;32mI (112974) mmWave_feature: HR_Filtered: 87.00[0m
+[0;32mI (113544) mmWave_feature: HR_Filtered: 87.90[0m
+[0;32mI (114314) mmWave_feature: HR_Filtered: 88.80[0m
+[0;32mI (114694) mmWave_feature: HR_Filtered: 89.90[0m
+[0;32mI (115274) mmWave_feature: HR_Filtered: 91.20[0m
+[0;32mI (115854) mmWave_feature: HR_Filtered: 92.60[0m
+[0;32mI (116434) mmWave_feature: HR_Filtered: 94.10[0m
+[0;32mI (117204) mmWave_feature: HR_Filtered: 95.70[0m
+[0;32mI (117784) mmWave_feature: HR_Filtered: 97.20[0m
+[0;32mI (118364) mmWave_feature: HR_Filtered: 98.70[0m
+[0;32mI (118944) mmWave_feature: HR_Filtered: 99.90[0m
+[0;32mI (119714) mmWave_feature: HR_Filtered: 100.90[0m
+[0;32mI (120104) mmWave_feature: HR_Filtered: 101.80[0m
+[0;32mI (120874) mmWave_feature: HR_Filtered: 102.40[0m
+[0;32mI (121454) mmWave_feature: HR_Filtered: 102.60[0m
+[0;32mI (122034) mmWave_feature: HR_Filtered: 102.50[0m
+[0;32mI (122614) mmWave_feature: HR_Filtered: 102.10[0m
+[0;32mI (123194) mmWave_feature: HR_Filtered: 101.50[0m
+[0;32mI (124154) mmWave_feature: HR_Filtered: 100.80[0m
+[0;32mI (124544) mmWave_feature: HR_Filtered: 99.90[0m
+[0;32mI (125124) mmWave_feature: HR_Filtered: 98.90[0m
+[0;32mI (126274) mmWave_feature: HR_Filtered: 97.80[0m
+[0;32mI (126854) mmWave_feature: HR_Filtered: 96.80[0m
+[0;32mI (127624) mmWave_feature: HR_Filtered: 95.70[0m
+[0;32mI (128204) mmWave_feature: HR_Filtered: 94.70[0m
+[0;32mI (128794) mmWave_feature: HR_Filtered: 94.00[0m
+[0;32mI (129364) mmWave_feature: HR_Filtered: 93.50[0m
+[0;32mI (129944) mmWave_feature: HR_Filtered: 93.20[0m
+[0;32mI (130524) mmWave_feature: HR_Filtered: 93.00[0m
+[0;32mI (131104) mmWave_feature: HR_Filtered: 92.80[0m
+[0;32mI (131874) mmWave_feature: HR_Filtered: 92.50[0m
+[0;32mI (132454) mmWave_feature: HR_Filtered: 92.10[0m
+[0;32mI (133224) mmWave_feature: HR_Filtered: 91.40[0m
+[0;32mI (133614) mmWave_feature: HR_Filtered: 90.70[0m
+[0;32mI (134194) mmWave_feature: HR_Filtered: 90.00[0m
+[0;32mI (134964) mmWave_feature: HR_Filtered: 89.00[0m
+[0;32mI (135534) mmWave_feature: HR_Filtered: 87.80[0m
+[0;32mI (136114) mmWave_feature: HR_Filtered: 86.30[0m
+[0;32mI (136694) mmWave_feature: HR_Filtered: 84.60[0m
+[0;32mI (137274) mmWave_feature: HR_Filtered: 82.90[0m
+[0;32mI (137854) mmWave_feature: HR_Filtered: 81.20[0m
+[0;32mI (138634) mmWave_feature: HR_Filtered: 79.60[0m
+[0;32mI (139204) mmWave_feature: HR_Filtered: 78.00[0m
+[0;32mI (139974) mmWave_feature: HR_Filtered: 76.40[0m
+[0;32mI (140354) mmWave_feature: HR_Filtered: 74.80[0m
+[0;32mI (140934) mmWave_feature: HR_Filtered: 73.40[0m
+[0;32mI (141514) mmWave_feature: HR_Filtered: 72.20[0m
+[0;32mI (142094) mmWave_feature: HR_Filtered: 71.00[0m
+[0;32mI (143054) mmWave_feature: HR_Filtered: 69.80[0m
+[0;32mI (144004) mmWave_feature: HR_Filtered: 68.50[0m
+[0;32mI (144584) mmWave_feature: HR_Filtered: 67.30[0m
+[0;32mI (145354) mmWave_feature: HR_Filtered: 66.10[0m
+[0;32mI (145934) mmWave_feature: HR_Filtered: 65.10[0m
+[0;32mI (146514) mmWave_feature: HR_Filtered: 64.20[0m
+[0;32mI (147094) mmWave_feature: HR_Filtered: 63.50[0m
+[0;32mI (147674) mmWave_feature: HR_Filtered: 62.80[0m
+[0;32mI (148444) mmWave_feature: HR_Filtered: 62.10[0m
+[0;32mI (149214) mmWave_feature: HR_Filtered: 61.60[0m
+[0;32mI (149974) mmWave_feature: HR_Filtered: 61.20[0m
+[0;32mI (150164) mmWave_feature: HR_Filtered: 61.00[0m
+[0;32mI (150744) mmWave_feature: HR_Filtered: 60.90[0m
+[0;32mI (151514) mmWave_feature: HR_Filtered: 61.00[0m
+[0;32mI (152094) mmWave_feature: HR_Filtered: 61.20[0m
+[0;32mI (152674) mmWave_feature: HR_Filtered: 61.80[0m
+[0;32mI (153444) mmWave_feature: HR_Filtered: 62.50[0m
+[0;32mI (154024) mmWave_feature: HR_Filtered: 63.50[0m
+[0;32mI (154414) mmWave_feature: HR_Filtered: 64.50[0m
+[0;32mI (155184) mmWave_feature: HR_Filtered: 65.60[0m
+[0;32mI (155764) mmWave_feature: HR_Filtered: 66.60[0m
+[0;32mI (156344) mmWave_feature: HR_Filtered: 67.60[0m
+[0;32mI (156924) mmWave_feature: HR_Filtered: 68.50[0m
+[0;32mI (157884) mmWave_feature: HR_Filtered: 69.20[0m
+[0;32mI (158844) mmWave_feature: HR_Filtered: 69.60[0m
+[0;32mI (159424) mmWave_feature: HR_Filtered: 69.60[0m
+[0;32mI (160004) mmWave_feature: HR_Filtered: 69.30[0m
+[0;32mI (160774) mmWave_feature: HR_Filtered: 68.70[0m
+[0;32mI (161344) mmWave_feature: HR_Filtered: 68.00[0m
+[0;32mI (161924) mmWave_feature: HR_Filtered: 67.10[0m
+[0;32mI (162504) mmWave_feature: HR_Filtered: 66.30[0m
+[0;32mI (163084) mmWave_feature: HR_Filtered: 65.50[0m
+[0;32mI (163664) mmWave_feature: HR_Filtered: 64.80[0m
+[0;32mI (164244) mmWave_feature: HR_Filtered: 64.20[0m
+[0;32mI (165394) mmWave_feature: HR_Filtered: 63.80[0m
+[0;32mI (165594) mmWave_feature: HR_Filtered: 63.50[0m
+[0;32mI (166174) mmWave_feature: HR_Filtered: 63.30[0m
+[0;32mI (166764) mmWave_feature: HR_Filtered: 63.10[0m
+[0;32mI (167344) mmWave_feature: HR_Filtered: 63.00[0m
+[0;32mI (167924) mmWave_feature: HR_Filtered: 63.00[0m
+[0;32mI (168504) mmWave_feature: HR_Filtered: 63.00[0m
+[0;32mI (169274) mmWave_feature: HR_Filtered: 62.90[0m
+[0;32mI (169474) mmWave_feature: ----- No one here -----[0m
+[0;32mI (169674) mmWave_feature: ----- No one here -----[0m
+[0;32mI (169864) mmWave_feature: ----- No one here -----[0m
+[0;32mI (170064) mmWave_feature: ----- No one here -----[0m
+[0;32mI (170264) mmWave_feature: ----- No one here -----[0m
+[0;32mI (170454) mmWave_feature: ----- No one here -----[0m
+[0;32mI (170654) mmWave_feature: ----- No one here -----[0m
+[0;32mI (170854) mmWave_feature: ----- No one here -----[0m
+[0;32mI (171044) mmWave_feature: ----- No one here -----[0m
+[0;32mI (171244) mmWave_feature: ----- No one here -----[0m
+[0;32mI (171444) mmWave_feature: ----- No one here -----[0m
+[0;32mI (171634) mmWave_feature: ----- No one here -----[0m
+[0;32mI (171834) mmWave_feature: ----- No one here -----[0m
+[0;32mI (172024) mmWave_feature: ----- No one here -----[0m
+[0;32mI (172224) mmWave_feature: ----- No one here -----[0m
+[0;32mI (172424) mmWave_feature: ----- No one here -----[0m
+[0;32mI (172804) mmWave_feature: HR_Filtered: 62.60[0m
+[0;32mI (173384) mmWave_feature: HR_Filtered: 62.30[0m
+[0;32mI (174344) mmWave_feature: HR_Filtered: 62.10[0m
+[0;32mI (174734) mmWave_feature: ----- No one here -----[0m
+[0;32mI (174924) mmWave_feature: ----- No one here -----[0m
+[0;32mI (175124) mmWave_feature: ----- No one here -----[0m
+[0;32mI (175314) mmWave_feature: ----- No one here -----[0m
+[0;32mI (175514) mmWave_feature: ----- No one here -----[0m
+[0;32mI (175704) mmWave_feature: ----- No one here -----[0m
+[0;32mI (175894) mmWave_feature: ----- No one here -----[0m
+[0;32mI (176084) mmWave_feature: ----- No one here -----[0m
+[0;32mI (176274) mmWave_feature: ----- No one here -----[0m
+[0;32mI (176464) mmWave_feature: ----- No one here -----[0m
+[0;32mI (176654) mmWave_feature: ----- No one here -----[0m
+[0;32mI (176844) mmWave_feature: ----- No one here -----[0m
+[0;32mI (177034) mmWave_feature: ----- No one here -----[0m
+[0;32mI (177234) mmWave_feature: ----- No one here -----[0m
+[0;32mI (177424) mmWave_feature: ----- No one here -----[0m
+[0;32mI (177614) mmWave_feature: ----- No one here -----[0m
+[0;32mI (177804) mmWave_feature: ----- No one here -----[0m
+[0;32mI (177994) mmWave_feature: ----- No one here -----[0m
+[0;32mI (178184) mmWave_feature: ----- No one here -----[0m
+[0;32mI (178374) mmWave_feature: ----- No one here -----[0m
+[0;32mI (178564) mmWave_feature: ----- No one here -----[0m
+[0;32mI (178754) mmWave_feature: ----- No one here -----[0m
+[0;32mI (178944) mmWave_feature: ----- No one here -----[0m
+[0;32mI (179134) mmWave_feature: ----- No one here -----[0m
+[0;32mI (179334) mmWave_feature: ----- No one here -----[0m
+[0;32mI (179524) mmWave_feature: ----- No one here -----[0m
+[0;32mI (180104) mmWave_feature: HR_Filtered: 62.00[0m
+[0;32mI (180684) mmWave_feature: HR_Filtered: 62.20[0m
+[0;32mI (181274) mmWave_feature: HR_Filtered: 62.80[0m
+[0;32mI (182234) mmWave_feature: HR_Filtered: 63.70[0m
+[0;32mI (183954) mmWave_feature: HR_Filtered: 65.50[0m
+[0;32mI (184524) mmWave_feature: HR_Filtered: 67.70[0m
+[0;32mI (185104) mmWave_feature: HR_Filtered: 70.40[0m
+[0;32mI (185684) mmWave_feature: HR_Filtered: 73.50[0m
+[0;32mI (186264) mmWave_feature: HR_Filtered: 76.80[0m
+[0;32mI (186844) mmWave_feature: HR_Filtered: 80.20[0m
+[0;32mI (187424) mmWave_feature: HR_Filtered: 83.60[0m
+[0;32mI (188574) mmWave_feature: HR_Filtered: 86.90[0m
+[0;32mI (188774) mmWave_feature: HR_Filtered: 90.00[0m
+[0;32mI (189354) mmWave_feature: HR_Filtered: 92.90[0m
+[0;32mI (189934) mmWave_feature: HR_Filtered: 95.00[0m
+[0;32mI (191274) mmWave_feature: HR_Filtered: 96.70[0m
+[0;32mI (192044) mmWave_feature: HR_Filtered: 98.10[0m
+[0;32mI (192424) mmWave_feature: HR_Filtered: 99.50[0m
+[0;32mI (193004) mmWave_feature: HR_Filtered: 100.90[0m
+[0;32mI (194344) mmWave_feature: HR_Filtered: 102.10[0m
+[0;32mI (194924) mmWave_feature: HR_Filtered: 103.30[0m
+[0;32mI (195704) mmWave_feature: HR_Filtered: 104.20[0m
+[0;32mI (196094) mmWave_feature: HR_Filtered: 104.90[0m
+[0;32mI (196674) mmWave_feature: HR_Filtered: 105.50[0m
+[0;32mI (197254) mmWave_feature: HR_Filtered: 106.00[0m
+[0;32mI (197834) mmWave_feature: HR_Filtered: 106.60[0m
+[0;32mI (198604) mmWave_feature: HR_Filtered: 107.20[0m
+[0;32mI (199184) mmWave_feature: HR_Filtered: 107.70[0m
+[0;32mI (199764) mmWave_feature: HR_Filtered: 107.80[0m
+[0;32mI (200344) mmWave_feature: HR_Filtered: 107.50[0m
+[0;32mI (200924) mmWave_feature: HR_Filtered: 106.80[0m
+[0;32mI (201504) mmWave_feature: HR_Filtered: 105.90[0m
+[0;32mI (202084) mmWave_feature: HR_Filtered: 104.60[0m
+[0;32mI (202854) mmWave_feature: HR_Filtered: 103.10[0m
+[0;32mI (203434) mmWave_feature: HR_Filtered: 101.30[0m
+[0;32mI (204014) mmWave_feature: HR_Filtered: 99.10[0m
+[0;32mI (204214) mmWave_feature: ----- No one here -----[0m
+[0;32mI (204594) mmWave_feature: HR_Filtered: 96.60[0m
+[0;32mI (204984) mmWave_feature: ----- No one here -----[0m
+[0;32mI (205184) mmWave_feature: ----- No one here -----[0m
+[0;32mI (205374) mmWave_feature: ----- No one here -----[0m
+[0;32mI (205574) mmWave_feature: ----- No one here -----[0m
+[0;32mI (205774) mmWave_feature: ----- No one here -----[0m
+[0;32mI (205964) mmWave_feature: ----- No one here -----[0m
+[0;32mI (206164) mmWave_feature: ----- No one here -----[0m
+[0;32mI (206364) mmWave_feature: ----- No one here -----[0m
+[0;32mI (206554) mmWave_feature: ----- No one here -----[0m
+[0;32mI (206754) mmWave_feature: ----- No one here -----[0m
+[0;32mI (206954) mmWave_feature: ----- No one here -----[0m
+[0;32mI (207144) mmWave_feature: ----- No one here -----[0m
+[0;32mI (207344) mmWave_feature: ----- No one here -----[0m
+[0;32mI (207534) mmWave_feature: ----- No one here -----[0m
+[0;32mI (207724) mmWave_feature: ----- No one here -----[0m
+[0;32mI (207924) mmWave_feature: ----- No one here -----[0m
+[0;32mI (208114) mmWave_feature: ----- No one here -----[0m
+[0;32mI (208314) mmWave_feature: ----- No one here -----[0m
+[0;32mI (208514) mmWave_feature: ----- No one here -----[0m
+[0;32mI (208704) mmWave_feature: ----- No one here -----[0m
+[0;32mI (208904) mmWave_feature: ----- No one here -----[0m
+[0;32mI (209104) mmWave_feature: ----- No one here -----[0m
+[0;32mI (209294) mmWave_feature: ----- No one here -----[0m
+[0;32mI (209494) mmWave_feature: ----- No one here -----[0m
+[0;32mI (209694) mmWave_feature: ----- No one here -----[0m
+[0;32mI (209884) mmWave_feature: ----- No one here -----[0m
+[0;32mI (210084) mmWave_feature: ----- No one here -----[0m
+[0;32mI (210274) mmWave_feature: ----- No one here -----[0m
+[0;32mI (210464) mmWave_feature: ----- No one here -----[0m
+[0;32mI (210664) mmWave_feature: ----- No one here -----[0m
+[0;32mI (210854) mmWave_feature: ----- No one here -----[0m
+[0;32mI (211054) mmWave_feature: ----- No one here -----[0m
+[0;32mI (211254) mmWave_feature: ----- No one here -----[0m
+[0;32mI (211444) mmWave_feature: ----- No one here -----[0m
+[0;32mI (211644) mmWave_feature: ----- No one here -----[0m
+[0;32mI (211844) mmWave_feature: ----- No one here -----[0m
+[0;32mI (212034) mmWave_feature: ----- No one here -----[0m
+[0;32mI (212234) mmWave_feature: ----- No one here -----[0m
+[0;32mI (212434) mmWave_feature: ----- No one here -----[0m
+[0;32mI (212624) mmWave_feature: ----- No one here -----[0m
+[0;32mI (212824) mmWave_feature: ----- No one here -----[0m
+[0;32mI (213024) mmWave_feature: ----- No one here -----[0m
+[0;32mI (213214) mmWave_feature: ----- No one here -----[0m
+[0;32mI (213414) mmWave_feature: ----- No one here -----[0m
+[0;32mI (213624) mmWave_feature: ----- No one here -----[0m
+[0;32mI (213814) mmWave_feature: ----- No one here -----[0m
+[0;32mI (214014) mmWave_feature: ----- No one here -----[0m
+[0;32mI (214214) mmWave_feature: ----- No one here -----[0m
+[0;32mI (214404) mmWave_feature: ----- No one here -----[0m
+[0;32mI (214604) mmWave_feature: ----- No one here -----[0m
+[0;32mI (214794) mmWave_feature: ----- No one here -----[0m
+[0;32mI (214994) mmWave_feature: ----- No one here -----[0m
+[0;32mI (215194) mmWave_feature: ----- No one here -----[0m
+[0;32mI (215384) mmWave_feature: ----- No one here -----[0m
+[0;32mI (215584) mmWave_feature: ----- No one here -----[0m
+[0;32mI (215784) mmWave_feature: ----- No one here -----[0m
+[0;32mI (215974) mmWave_feature: ----- No one here -----[0m
+[0;32mI (216174) mmWave_feature: ----- No one here -----[0m
+[0;32mI (216374) mmWave_feature: ----- No one here -----[0m
+[0;32mI (216564) mmWave_feature: ----- No one here -----[0m
+[0;32mI (216764) mmWave_feature: ----- No one here -----[0m
+[0;32mI (216964) mmWave_feature: ----- No one here -----[0m
+[0;32mI (217154) mmWave_feature: HR_Filtered: 94.00[0m
+[0;32mI (217734) mmWave_feature: HR_Filtered: 91.60[0m
+[0;32mI (218314) mmWave_feature: HR_Filtered: 89.60[0m
+[0;32mI (218894) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (219674) mmWave_feature: HR_Filtered: 86.70[0m
+[0;32mI (220454) mmWave_feature: HR_Filtered: 85.80[0m
+[0;32mI (220834) mmWave_feature: HR_Filtered: 85.30[0m
+[0;32mI (221414) mmWave_feature: HR_Filtered: 85.20[0m
+[0;32mI (221994) mmWave_feature: HR_Filtered: 85.60[0m
+[0;32mI (222574) mmWave_feature: HR_Filtered: 86.40[0m
+[0;32mI (223154) mmWave_feature: HR_Filtered: 87.20[0m
+[0;32mI (224114) mmWave_feature: HR_Filtered: 88.10[0m
+[0;32mI (224504) mmWave_feature: HR_Filtered: 89.10[0m
+[0;32mI (225084) mmWave_feature: HR_Filtered: 90.10[0m
+[0;32mI (225664) mmWave_feature: HR_Filtered: 91.10[0m
+[0;32mI (226244) mmWave_feature: HR_Filtered: 92.10[0m
+[0;32mI (227014) mmWave_feature: HR_Filtered: 92.90[0m
+[0;32mI (227584) mmWave_feature: HR_Filtered: 93.70[0m
+[0;32mI (228354) mmWave_feature: HR_Filtered: 94.60[0m
+[0;32mI (228734) mmWave_feature: HR_Filtered: 95.60[0m
+[0;32mI (229314) mmWave_feature: HR_Filtered: 96.90[0m
+[0;32mI (230084) mmWave_feature: HR_Filtered: 98.40[0m
+[0;32mI (230844) mmWave_feature: HR_Filtered: 99.80[0m
+[0;32mI (231224) mmWave_feature: HR_Filtered: 101.10[0m
+[0;32mI (231804) mmWave_feature: HR_Filtered: 102.40[0m
+[0;32mI (232384) mmWave_feature: HR_Filtered: 103.40[0m
+[0;32mI (232964) mmWave_feature: HR_Filtered: 104.20[0m
+[0;32mI (233734) mmWave_feature: HR_Filtered: 105.00[0m
+[0;32mI (234694) mmWave_feature: HR_Filtered: 105.50[0m
+[0;32mI (235084) mmWave_feature: HR_Filtered: 105.70[0m
+[0;32mI (235474) mmWave_feature: HR_Filtered: 105.60[0m
+[0;32mI (236054) mmWave_feature: HR_Filtered: 104.90[0m
+[0;32mI (236634) mmWave_feature: HR_Filtered: 103.90[0m
+[0;32mI (237404) mmWave_feature: HR_Filtered: 102.60[0m
+[0;32mI (237984) mmWave_feature: HR_Filtered: 100.90[0m
+[0;32mI (238564) mmWave_feature: HR_Filtered: 99.20[0m
+[0;32mI (239334) mmWave_feature: HR_Filtered: 97.40[0m
+[0;32mI (239914) mmWave_feature: HR_Filtered: 95.30[0m
+[0;32mI (240484) mmWave_feature: HR_Filtered: 93.00[0m
+[0;32mI (241254) mmWave_feature: HR_Filtered: 90.70[0m
+[0;32mI (241634) mmWave_feature: HR_Filtered: 88.40[0m
+[0;32mI (242214) mmWave_feature: HR_Filtered: 86.50[0m
+[0;32mI (242794) mmWave_feature: HR_Filtered: 84.90[0m
+[0;32mI (243374) mmWave_feature: HR_Filtered: 83.60[0m
+[0;32mI (244144) mmWave_feature: HR_Filtered: 82.80[0m
+[0;32mI (244724) mmWave_feature: HR_Filtered: 82.50[0m
+[0;32mI (245304) mmWave_feature: HR_Filtered: 82.80[0m
+[0;32mI (245884) mmWave_feature: HR_Filtered: 83.50[0m
+[0;32mI (246464) mmWave_feature: HR_Filtered: 84.70[0m
+[0;32mI (247044) mmWave_feature: HR_Filtered: 86.30[0m
+[0;32mI (247814) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (248394) mmWave_feature: HR_Filtered: 89.60[0m
+[0;32mI (248974) mmWave_feature: HR_Filtered: 91.00[0m
+[0;32mI (249554) mmWave_feature: HR_Filtered: 92.30[0m
+[0;32mI (250134) mmWave_feature: HR_Filtered: 93.40[0m
+[0;32mI (250714) mmWave_feature: HR_Filtered: 94.10[0m
+[0;32mI (251294) mmWave_feature: HR_Filtered: 94.40[0m
+[0;32mI (252064) mmWave_feature: HR_Filtered: 94.40[0m
+[0;32mI (252644) mmWave_feature: HR_Filtered: 94.00[0m
+[0;32mI (253224) mmWave_feature: HR_Filtered: 93.20[0m
+[0;32mI (253804) mmWave_feature: HR_Filtered: 92.20[0m
+[0;32mI (254384) mmWave_feature: HR_Filtered: 91.10[0m
+[0;32mI (254964) mmWave_feature: HR_Filtered: 90.20[0m
+[0;32mI (255734) mmWave_feature: HR_Filtered: 89.40[0m
+[0;32mI (256314) mmWave_feature: HR_Filtered: 88.70[0m
+[0;32mI (256894) mmWave_feature: HR_Filtered: 88.20[0m
+[0;32mI (257474) mmWave_feature: HR_Filtered: 87.90[0m
+[0;32mI (258054) mmWave_feature: HR_Filtered: 87.70[0m
+[0;32mI (258634) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (259784) mmWave_feature: HR_Filtered: 87.50[0m
+[0;32mI (259984) mmWave_feature: HR_Filtered: 87.50[0m
+[0;32mI (260754) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (261144) mmWave_feature: HR_Filtered: 87.70[0m
+[0;32mI (261724) mmWave_feature: HR_Filtered: 87.80[0m
+[0;32mI (262304) mmWave_feature: HR_Filtered: 87.90[0m
+[0;32mI (263074) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (263654) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (264234) mmWave_feature: HR_Filtered: 87.90[0m
+[0;32mI (264814) mmWave_feature: HR_Filtered: 87.80[0m
+[0;32mI (265584) mmWave_feature: HR_Filtered: 87.70[0m
+[0;32mI (266154) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (266724) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (267304) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (267884) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (268654) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (269044) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (269814) mmWave_feature: HR_Filtered: 87.60[0m
+[0;32mI (270584) mmWave_feature: HR_Filtered: 87.70[0m
+[0;32mI (270964) mmWave_feature: HR_Filtered: 87.80[0m
+[0;32mI (271544) mmWave_feature: HR_Filtered: 87.90[0m
+[0;32mI (272314) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (272884) mmWave_feature: HR_Filtered: 88.10[0m
+[0;32mI (273464) mmWave_feature: HR_Filtered: 88.20[0m
+[0;32mI (274044) mmWave_feature: HR_Filtered: 88.30[0m
+[0;32mI (274624) mmWave_feature: HR_Filtered: 88.50[0m
+[0;32mI (275204) mmWave_feature: HR_Filtered: 88.90[0m
+[0;32mI (275974) mmWave_feature: HR_Filtered: 89.40[0m
+[0;32mI (276544) mmWave_feature: HR_Filtered: 90.10[0m
+[0;32mI (277124) mmWave_feature: HR_Filtered: 90.90[0m
+[0;32mI (277894) mmWave_feature: HR_Filtered: 91.90[0m
+[0;32mI (278284) mmWave_feature: HR_Filtered: 93.10[0m
+[0;32mI (278864) mmWave_feature: HR_Filtered: 94.40[0m
+[0;32mI (279444) mmWave_feature: HR_Filtered: 95.90[0m
+[0;32mI (280214) mmWave_feature: HR_Filtered: 97.30[0m
+[0;32mI (280794) mmWave_feature: HR_Filtered: 98.30[0m
+[0;32mI (281374) mmWave_feature: HR_Filtered: 98.90[0m
+[0;32mI (281954) mmWave_feature: HR_Filtered: 99.20[0m
+[0;32mI (282534) mmWave_feature: HR_Filtered: 99.00[0m
+[0;32mI (283494) mmWave_feature: HR_Filtered: 98.50[0m
+[0;32mI (284644) mmWave_feature: HR_Filtered: 97.50[0m
+[0;32mI (285024) mmWave_feature: HR_Filtered: 96.10[0m
+[0;32mI (285794) mmWave_feature: HR_Filtered: 94.30[0m
+[0;32mI (286184) mmWave_feature: HR_Filtered: 92.20[0m
+[0;32mI (286954) mmWave_feature: HR_Filtered: 90.10[0m
+[0;32mI (287534) mmWave_feature: HR_Filtered: 88.20[0m
+[0;32mI (288304) mmWave_feature: HR_Filtered: 86.50[0m
+[0;32mI (288694) mmWave_feature: HR_Filtered: 84.90[0m
+[0;32mI (289274) mmWave_feature: HR_Filtered: 83.50[0m
+[0;32mI (289854) mmWave_feature: HR_Filtered: 82.30[0m
+[0;32mI (290624) mmWave_feature: HR_Filtered: 81.40[0m
+[0;32mI (291204) mmWave_feature: HR_Filtered: 80.70[0m
+[0;32mI (291974) mmWave_feature: HR_Filtered: 80.10[0m
+[0;32mI (292364) mmWave_feature: HR_Filtered: 79.70[0m
+[0;32mI (292944) mmWave_feature: HR_Filtered: 79.40[0m
+[0;32mI (293524) mmWave_feature: HR_Filtered: 79.30[0m
+[0;32mI (294484) mmWave_feature: HR_Filtered: 79.20[0m
+[0;32mI (294864) mmWave_feature: HR_Filtered: 79.30[0m
+[0;32mI (295444) mmWave_feature: HR_Filtered: 79.50[0m
+[0;32mI (296024) mmWave_feature: HR_Filtered: 79.70[0m
+[0;32mI (296604) mmWave_feature: HR_Filtered: 80.10[0m
+[0;32mI (297384) mmWave_feature: HR_Filtered: 80.70[0m
+[0;32mI (297954) mmWave_feature: HR_Filtered: 81.50[0m
+[0;32mI (298534) mmWave_feature: HR_Filtered: 82.20[0m
+[0;32mI (299114) mmWave_feature: HR_Filtered: 82.90[0m
+[0;32mI (299884) mmWave_feature: HR_Filtered: 83.40[0m
+[0;32mI (300274) mmWave_feature: HR_Filtered: 84.00[0m
+[0;32mI (301434) mmWave_feature: HR_Filtered: 84.50[0m
+[0;32mI (301624) mmWave_feature: HR_Filtered: 84.90[0m
+[0;32mI (302394) mmWave_feature: HR_Filtered: 85.20[0m
+[0;32mI (302774) mmWave_feature: HR_Filtered: 85.30[0m
+[0;32mI (303354) mmWave_feature: HR_Filtered: 85.10[0m
+[0;32mI (304124) mmWave_feature: HR_Filtered: 84.80[0m
+[0;32mI (304704) mmWave_feature: HR_Filtered: 84.50[0m
+[0;32mI (305284) mmWave_feature: HR_Filtered: 84.20[0m
+[0;32mI (305864) mmWave_feature: HR_Filtered: 83.80[0m
+[0;32mI (306634) mmWave_feature: HR_Filtered: 83.20[0m

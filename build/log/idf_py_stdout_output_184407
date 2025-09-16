@@ -1,0 +1,98 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x7f (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40022eea
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x304c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Sep 11 2025 13:07:54[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42028020 size=0ec98h ( 60568) map[0m
+[0;32mI (93) esp_image: segment 1: paddr=0001ecc0 vaddr=40800000 size=01358h (  4952) load[0m
+[0;32mI (95) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=25610h (153104) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00045638 vaddr=40801358 size=0eebch ( 61116) load[0m
+[0;32mI (139) esp_image: segment 4: paddr=000544fc vaddr=40810220 size=01d40h (  7488) load[0m
+[0;32mI (145) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (145) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Unicore app[0m
+[0;32mI (165) cpu_start: Pro cpu start user code[0m
+[0;32mI (165) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (166) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     mmwave_project[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (173) app_init: Compile time:     Sep 11 2025 13:07:51[0m
+[0;32mI (178) app_init: ELF file SHA256:  8a2526c31...[0m
+[0;32mI (182) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (205) heap_init: At 408136E0 len 00068F30 (419 KiB): RAM[0m
+[0;32mI (210) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (215) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (221) spi_flash: detected chip: generic[0m
+[0;32mI (224) spi_flash: flash io: dio[0m
+[0;33mW (227) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (245) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (252) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (256) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (261) main_task: Calling app_main()[0m
+[0;32mI (271) uart: queue free spaces: 10[0m
+[0;32mI (271) mmWave_feature: Starting app...[0m
+Arduino setup done!
+[0;32mI (271) uart: queue free spaces: 20[0m
+[0;32mI (271) mmWave_feature: mmWave sensor initialized[0m
+[0;32mI (271) uart: queue free spaces: 20[0m
+[0;32mI (281) LED: Created LED strip object with SPI backend[0m
+[0;32mI (281) LED: Start controlling LED strip[0m
+[0;32mI (12381) mmWave_feature: HR_Filtered: 77.00[0m
+[0;32mI (12981) mmWave_feature: HR_Filtered: 76.00[0m
+[0;32mI (13581) mmWave_feature: HR_Filtered: 75.00[0m
+[0;32mI (14181) mmWave_feature: HR_Filtered: 74.75[0m
+[0;32mI (15981) mmWave_feature: HR_Filtered: 77.00[0m
+[0;32mI (17781) mmWave_feature: HR_Filtered: 79.50[0m
+[0;32mI (18381) mmWave_feature: HR_Filtered: 81.71[0m
+[0;32mI (20181) mmWave_feature: HR_Filtered: 84.38[0m
+[0;32mI (21981) mmWave_feature: HR_Filtered: 87.00[0m
+[0;32mI (22581) mmWave_feature: HR_Filtered: 89.20[0m
+[0;32mI (23181) mmWave_feature: HR_Filtered: 92.60[0m
+[0;32mI (23781) mmWave_feature: HR_Filtered: 96.40[0m
+[0;32mI (24981) mmWave_feature: HR_Filtered: 99.50[0m
+[0;32mI (25581) mmWave_feature: HR_Filtered: 102.10[0m
+[0;32mI (26781) mmWave_feature: HR_Filtered: 103.50[0m
+[0;32mI (27381) mmWave_feature: HR_Filtered: 104.30[0m
+[0;32mI (27981) mmWave_feature: HR_Filtered: 104.80[0m
+[0;32mI (43581) mmWave_feature: HR_Filtered: 105.30[0m
+[0;32mI (44181) mmWave_feature: HR_Filtered: 105.10[0m
+[0;32mI (45381) mmWave_feature: HR_Filtered: 104.60[0m
+[0;32mI (45981) mmWave_feature: HR_Filtered: 104.00[0m
+[0;32mI (47181) mmWave_feature: HR_Filtered: 103.40[0m
+[0;32mI (47781) mmWave_feature: HR_Filtered: 103.80[0m
+[0;32mI (48381) mmWave_feature: HR_Filtered: 104.70[0m
+[0;32mI (49581) mmWave_feature: HR_Filtered: 105.80[0m
+[0;32mI (50181) mmWave_feature: HR_Filtered: 107.00[0m
+[0;32mI (50781) mmWave_feature: HR_Filtered: 108.20[0m
+[0;32mI (51381) mmWave_feature: HR_Filtered: 108.70[0m
+[0;32mI (51981) mmWave_feature: HR_Filtered: 109.50[0m
+[0;32mI (52581) mmWave_feature: HR_Filtered: 110.20[0m
+[0;32mI (53181) mmWave_feature: HR_Filtered: 110.40[0m
+[0;32mI (53781) mmWave_feature: HR_Filtered: 109.90[0m
+[0;32mI (54381) mmWave_feature: HR_Filtered: 108.90[0m
+[0;32mI (55581) mmWave_feature: HR_Filtered: 107.70[0m

@@ -1,0 +1,207 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x7f (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4002f454
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x304c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Sep 11 2025 13:07:54[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42028020 size=0ecf0h ( 60656) map[0m
+[0;32mI (93) esp_image: segment 1: paddr=0001ed18 vaddr=40800000 size=01300h (  4864) load[0m
+[0;32mI (95) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=256e0h (153312) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00045708 vaddr=40801300 size=0ef14h ( 61204) load[0m
+[0;32mI (139) esp_image: segment 4: paddr=00054624 vaddr=40810220 size=01d40h (  7488) load[0m
+[0;32mI (145) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (145) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Unicore app[0m
+[0;32mI (165) cpu_start: Pro cpu start user code[0m
+[0;32mI (165) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (166) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     mmwave_project[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (173) app_init: Compile time:     Sep 11 2025 13:07:51[0m
+[0;32mI (178) app_init: ELF file SHA256:  e1025d76a...[0m
+[0;32mI (183) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (191) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (205) heap_init: At 408136E0 len 00068F30 (419 KiB): RAM[0m
+[0;32mI (210) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (215) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (221) spi_flash: detected chip: generic[0m
+[0;32mI (224) spi_flash: flash io: dio[0m
+[0;33mW (227) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (245) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (252) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (256) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (261) main_task: Calling app_main()[0m
+[0;32mI (271) uart: queue free spaces: 10[0m
+[0;32mI (271) mmWave_feature: Starting app...[0m
+Arduino setup done!
+[0;32mI (271) uart: queue free spaces: 20[0m
+[0;32mI (271) mmWave_feature: mmWave sensor initialized[0m
+[0;32mI (271) uart: queue free spaces: 20[0m
+[0;32mI (281) LED: Created LED strip object with SPI backend[0m
+[0;32mI (281) LED: Start controlling LED strip[0m
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+[0;32mI (8781) mmWave_feature: HR_Filtered: 76.00[0m
+[0;32mI (9381) mmWave_feature: HR_Filtered: 75.00[0m
+[0;32mI (9981) mmWave_feature: HR_Filtered: 74.33[0m
+[0;32mI (10581) mmWave_feature: HR_Filtered: 73.75[0m
+[0;32mI (11181) mmWave_feature: HR_Filtered: 73.20[0m
+[0;32mI (11781) mmWave_feature: HR_Filtered: 72.67[0m
+[0;32mI (12381) mmWave_feature: HR_Filtered: 72.14[0m
+[0;32mI (12981) mmWave_feature: HR_Filtered: 71.88[0m
+[0;32mI (14171) mmWave_feature: HR_Filtered: 71.89[0m
+[0;32mI (14781) mmWave_feature: HR_Filtered: 72.00[0m
+[0;32mI (15381) mmWave_feature: HR_Filtered: 71.80[0m
+[0;32mI (15981) mmWave_feature: HR_Filtered: 72.00[0m
+[0;32mI (17181) mmWave_feature: HR_Filtered: 72.70[0m
+[0;32mI (18371) mmWave_feature: HR_Filtered: 73.60[0m
+[0;32mI (18981) mmWave_feature: HR_Filtered: 74.80[0m
+[0;32mI (19581) mmWave_feature: HR_Filtered: 76.30[0m
+[0;32mI (20181) mmWave_feature: HR_Filtered: 78.10[0m
+[0;32mI (20781) mmWave_feature: HR_Filtered: 79.90[0m
+[0;32mI (21381) mmWave_feature: HR_Filtered: 81.50[0m
+[0;32mI (21981) mmWave_feature: HR_Filtered: 83.10[0m
+[0;32mI (24381) mmWave_feature: HR_Filtered: 84.70[0m
+[0;32mI (35781) mmWave_feature: HR_Filtered: 86.20[0m
+[0;32mI (36381) mmWave_feature: HR_Filtered: 87.40[0m
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+[0;32mI (42981) mmWave_feature: HR_Filtered: 87.80[0m
+[0;32mI (43581) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (44181) mmWave_feature: HR_Filtered: 88.00[0m
+[0;32mI (44781) mmWave_feature: HR_Filtered: 87.80[0m
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+[0;32mI (49581) mmWave_feature: HR_Filtered: 87.70[0m
+[0;32mI (50181) mmWave_feature: HR_Filtered: 87.80[0m
+[0;32mI (52581) mmWave_feature: HR_Filtered: 88.80[0m
+[0;32mI (53781) mmWave_feature: HR_Filtered: 90.20[0m
+[0;32mI (54381) mmWave_feature: HR_Filtered: 91.80[0m
+[0;32mI (54981) mmWave_feature: HR_Filtered: 93.60[0m
+[0;32mI (56181) mmWave_feature: HR_Filtered: 96.30[0m
+[0;32mI (56781) mmWave_feature: HR_Filtered: 99.10[0m
+[0;32mI (57381) mmWave_feature: HR_Filtered: 102.10[0m
+[0;32mI (58581) mmWave_feature: HR_Filtered: 105.50[0m
+[0;32mI (60971) mmWave_feature: HR_Filtered: 108.10[0m
+[0;32mI (72381) mmWave_feature: HR_Filtered: 108.10[0m
+[0;32mI (72981) mmWave_feature: HR_Filtered: 107.10[0m
+[0;32mI (73581) mmWave_feature: HR_Filtered: 105.60[0m
+[0;32mI (75981) mmWave_feature: HR_Filtered: 103.50[0m
+[0;32mI (76581) mmWave_feature: HR_Filtered: 100.90[0m
+[0;32mI (77171) mmWave_feature: HR_Filtered: 97.90[0m
+[0;32mI (77771) mmWave_feature: HR_Filtered: 94.70[0m
+[0;32mI (78381) mmWave_feature: HR_Filtered: 91.20[0m
+[0;32mI (78981) mmWave_feature: HR_Filtered: 87.30[0m
+[0;32mI (80181) mmWave_feature: HR_Filtered: 83.80[0m
+[0;32mI (80781) mmWave_feature: HR_Filtered: 82.60[0m
+[0;32mI (82581) mmWave_feature: HR_Filtered: 81.20[0m
+[0;32mI (83181) mmWave_feature: HR_Filtered: 79.60[0m
+[0;32mI (83781) mmWave_feature: HR_Filtered: 78.10[0m
+[0;32mI (84381) mmWave_feature: HR_Filtered: 76.60[0m
+[0;32mI (84981) mmWave_feature: HR_Filtered: 75.20[0m
+[0;32mI (85581) mmWave_feature: HR_Filtered: 73.80[0m
+[0;32mI (86181) mmWave_feature: HR_Filtered: 72.40[0m
+[0;32mI (86781) mmWave_feature: HR_Filtered: 70.90[0m
+[0;32mI (87371) mmWave_feature: HR_Filtered: 69.60[0m
+[0;32mI (99381) mmWave_feature: HR_Filtered: 70.20[0m
+[0;32mI (99981) mmWave_feature: HR_Filtered: 71.20[0m
+[0;32mI (101181) mmWave_feature: HR_Filtered: 72.60[0m
+[0;32mI (101781) mmWave_feature: HR_Filtered: 74.10[0m
+[0;32mI (102381) mmWave_feature: HR_Filtered: 75.60[0m
+[0;32mI (102981) mmWave_feature: HR_Filtered: 77.20[0m
+[0;32mI (103571) mmWave_feature: HR_Filtered: 79.20[0m
+[0;32mI (104781) mmWave_feature: HR_Filtered: 81.90[0m
+[0;32mI (105381) mmWave_feature: HR_Filtered: 85.10[0m
+[0;32mI (105981) mmWave_feature: HR_Filtered: 88.60[0m
+[0;32mI (107781) mmWave_feature: HR_Filtered: 90.80[0m
+[0;32mI (108371) mmWave_feature: HR_Filtered: 92.90[0m
+[0;32mI (109581) mmWave_feature: HR_Filtered: 94.70[0m
+[0;32mI (110781) mmWave_feature: HR_Filtered: 96.40[0m
+[0;32mI (111381) mmWave_feature: HR_Filtered: 98.10[0m
+[0;32mI (114371) mmWave_feature: HR_Filtered: 99.00[0m
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+[0;32mI (119771) mmWave_feature: HR_Filtered: 97.90[0m
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+----- No one here -----
+[0;32mI (129981) mmWave_feature: HR_Filtered: 94.60[0m
+[0;32mI (132381) mmWave_feature: HR_Filtered: 90.90[0m
+[0;32mI (133581) mmWave_feature: HR_Filtered: 87.30[0m
+[0;32mI (140181) mmWave_feature: HR_Filtered: 84.80[0m
+[0;32mI (140781) mmWave_feature: HR_Filtered: 82.70[0m
+[0;32mI (141381) mmWave_feature: HR_Filtered: 81.10[0m
+[0;32mI (141981) mmWave_feature: HR_Filtered: 80.00[0m
+[0;32mI (142581) mmWave_feature: HR_Filtered: 79.50[0m
+[0;32mI (143181) mmWave_feature: HR_Filtered: 80.10[0m
+[0;32mI (143781) mmWave_feature: HR_Filtered: 82.60[0m
+[0;32mI (144381) mmWave_feature: HR_Filtered: 87.00[0m
+[0;32mI (146781) mmWave_feature: HR_Filtered: 90.50[0m
+[0;32mI (147981) mmWave_feature: HR_Filtered: 93.00[0m
+[0;32mI (148581) mmWave_feature: HR_Filtered: 93.60[0m
+[0;32mI (149181) mmWave_feature: HR_Filtered: 93.40[0m
+[0;32mI (149781) mmWave_feature: HR_Filtered: 92.60[0m
+[0;32mI (150381) mmWave_feature: HR_Filtered: 91.30[0m
+[0;32mI (150981) mmWave_feature: HR_Filtered: 89.50[0m
+[0;32mI (151581) mmWave_feature: HR_Filtered: 87.20[0m
+[0;32mI (152181) mmWave_feature: HR_Filtered: 84.80[0m
+[0;32mI (153371) mmWave_feature: HR_Filtered: 82.20[0m
+[0;32mI (153971) mmWave_feature: HR_Filtered: 80.60[0m
+[0;32mI (154581) mmWave_feature: HR_Filtered: 79.90[0m
+[0;32mI (155181) mmWave_feature: HR_Filtered: 79.70[0m
+[0;32mI (155781) mmWave_feature: HR_Filtered: 80.00[0m
+[0;32mI (156381) mmWave_feature: HR_Filtered: 80.70[0m
+[0;32mI (156981) mmWave_feature: HR_Filtered: 81.90[0m
+[0;32mI (157581) mmWave_feature: HR_Filtered: 83.50[0m
+[0;32mI (158181) mmWave_feature: HR_Filtered: 85.40[0m
+[0;32mI (158781) mmWave_feature: HR_Filtered: 87.40[0m
+[0;32mI (159981) mmWave_feature: HR_Filtered: 89.70[0m
+[0;32mI (161771) mmWave_feature: HR_Filtered: 91.50[0m

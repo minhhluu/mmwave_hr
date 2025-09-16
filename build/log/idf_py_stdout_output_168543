@@ -1,0 +1,74 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/minhluu/esp/projects/mmwave_project/build/bootloader/esp-idf/esptool_py && /home/minhluu/.espressif/python_env/idf5.4_py3.11_env/bin/python /home/minhluu/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/minhluu/esp/projects/mmwave_project/build/bootloader/bootloader.bin
+Bootloader binary size 0x55e0 bytes. 0x2a20 bytes (33%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/mmwave_project.cpp.obj
+In file included from /home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/Seeed_Arduino_mmWave.h:17,
+                 from /home/minhluu/esp/projects/mmwave_project/main/mmwave_project.cpp:91:
+/home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/SEEED_MR60BHA2.h:53:1: warning: 'typedef' was ignored in this declaration
+   53 | typedef union FirmwareInfo {
+      | ^~~~~~~
+/home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/SEEED_MR60BHA2.h:65:33: warning: missing initializer for member 'HeartBreath::breath_phase' [-Wmissing-field-initializers]
+   65 |   HeartBreath _heart_breath = {0};
+      |                                 ^
+/home/minhluu/esp/projects/mmwave_project/managed_components/espressif__arduino-esp32/libraries/Seeed-mmWave-library-main/src/SEEED_MR60BHA2.h:65:33: warning: missing initializer for member 'HeartBreath::heart_phase' [-Wmissing-field-initializers]
+/home/minhluu/esp/projects/mmwave_project/main/mmwave_project.cpp: In function 'void app_main()':
+/home/minhluu/esp/projects/mmwave_project/main/mmwave_project.cpp:206:37: warning: unused variable 'target' [-Wunused-variable]
+  206 |                         const auto& target = target_info.targets[i];
+      |                                     ^~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable mmwave_project.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /home/minhluu/esp/projects/mmwave_project/build/mmwave_project.bin
+[9/10] cd /home/minhluu/esp/projects/mmwave_project/build/esp-idf/esptool_py && /home/minhluu/.espressif/python_env/idf5.4_py3.11_env/bin/python /home/minhluu/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/minhluu/esp/projects/mmwave_project/build/partition_table/partition-table.bin /home/minhluu/esp/projects/mmwave_project/build/mmwave_project.bin
+mmwave_project.bin binary size 0x3e9f0 bytes. Smallest app partition is 0x100000 bytes. 0xc1610 bytes (76%) free.
+[9/10] cd /home/minhluu/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/minhluu/esp/esp-idf -D "SERIAL_TOOL=/home/minhluu/.espressif/python_env/idf5.4_py3.11_env/bin/python;;/home/minhluu/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/minhluu/esp/projects/mmwave_project/build -P /home/minhluu/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c6 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 mmwave_project.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-C6FH4 (QFN32) (revision v0.1)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: e4:b3:23:ff:fe:b4:b8:a0
+BASE MAC: e4:b3:23:b4:b8:a0
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0004efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21984 bytes to 13591...
+Writing at 0x00000000... (100 %)
+Wrote 21984 bytes (13591 compressed) at 0x00000000 in 0.3 seconds (effective 582.9 kbit/s)...
+Hash of data verified.
+Compressed 256496 bytes to 130748...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001c10d... (25 %)
+Writing at 0x00022dbe... (37 %)
+Writing at 0x0002aa32... (50 %)
+Writing at 0x00032412... (62 %)
+Writing at 0x00039707... (75 %)
+Writing at 0x0004013d... (87 %)
+Writing at 0x00046fe2... (100 %)
+Wrote 256496 bytes (130748 compressed) at 0x00010000 in 2.1 seconds (effective 997.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 637.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

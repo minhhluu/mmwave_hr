@@ -1,0 +1,219 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x7f (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400228ee
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x304c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Sep 11 2025 13:07:54[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42028020 size=0d0ech ( 53484) map[0m
+[0;32mI (92) esp_image: segment 1: paddr=0001d114 vaddr=40800000 size=02f04h ( 12036) load[0m
+[0;32mI (95) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=216e4h (136932) map[0m
+[0;32mI (122) esp_image: segment 3: paddr=0004170c vaddr=40802f04 size=0b728h ( 46888) load[0m
+[0;32mI (133) esp_image: segment 4: paddr=0004ce3c vaddr=4080e630 size=01c60h (  7264) load[0m
+[0;32mI (138) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (139) boot: Disabling RNG early entropy source...[0m
+[0;32mI (150) cpu_start: Unicore app[0m
+[0;32mI (159) cpu_start: Pro cpu start user code[0m
+[0;32mI (159) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (159) app_init: Application information:[0m
+[0;32mI (160) app_init: Project name:     mmwave_project[0m
+[0;32mI (164) app_init: App version:      1[0m
+[0;32mI (167) app_init: Compile time:     Sep 11 2025 13:07:51[0m
+[0;32mI (172) app_init: ELF file SHA256:  7512ebc85...[0m
+[0;32mI (176) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (180) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (184) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (188) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (192) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (198) heap_init: At 40811A00 len 0006AC10 (427 KiB): RAM[0m
+[0;32mI (204) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (209) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (215) spi_flash: detected chip: generic[0m
+[0;32mI (218) spi_flash: flash io: dio[0m
+[0;33mW (221) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (233) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (239) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (246) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (250) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (254) main_task: Started on CPU0[0m
+[0;32mI (254) main_task: Calling app_main()[0m
+[0;32mI (264) uart: queue free spaces: 10[0m
+[0;32mI (264) mmWave_feature: Starting app...[0m
+Arduino setup done!
+[0;32mI (264) uart: queue free spaces: 20[0m
+[0;32mI (264) mmWave_feature: mmWave sensor initialized[0m
+[0;32mI (364) mmWave_feature: Human Detected[0m
+[0;32mI (364) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: 0.06
+Total Target: 1
+  move_speed: -0.50 cm/s
+[0;32mI (564) mmWave_feature: Human Detected[0m
+[0;32mI (564) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: 0.06
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (764) mmWave_feature: Human Detected[0m
+[0;32mI (774) mmWave_feature: Got Target Info - Number of targets: 1[0m
+[0;32mI (774) mmWave_feature: Heart rate detected[0m
+HR_Filtered: 93.00
+heart_phase_____: 0.03
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (964) mmWave_feature: Human Detected[0m
+[0;32mI (974) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: 0.10
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (1164) mmWave_feature: Human Detected[0m
+[0;32mI (1164) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: -0.51
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (1364) mmWave_feature: Human Detected[0m
+[0;32mI (1374) mmWave_feature: Got Target Info - Number of targets: 1[0m
+[0;32mI (1374) mmWave_feature: Heart rate detected[0m
+HR_Filtered: 92.00
+heart_phase_____: -0.27
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (1564) mmWave_feature: Human Detected[0m
+[0;32mI (1564) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (1764) mmWave_feature: Human Detected[0m
+[0;32mI (1774) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: 0.25
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (1964) mmWave_feature: Human Detected[0m
+[0;32mI (1974) mmWave_feature: Got Target Info - Number of targets: 1[0m
+[0;32mI (1974) mmWave_feature: Heart rate detected[0m
+HR_Filtered: 91.67
+heart_phase_____: -0.45
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (2164) mmWave_feature: Human Detected[0m
+[0;32mI (2164) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: -0.43
+Total Target: 1
+  move_speed: 0.50 cm/s
+[0;32mI (2364) mmWave_feature: Human Detected[0m
+[0;32mI (2374) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: -0.11
+Total Target: 1
+  move_speed: 0.50 cm/s
+[0;32mI (2564) mmWave_feature: Human Detected[0m
+[0;32mI (2574) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: 0.50 cm/s
+[0;32mI (2764) mmWave_feature: Human Detected[0m
+[0;32mI (2764) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: 0.50 cm/s
+[0;32mI (2964) mmWave_feature: Human Detected[0m
+[0;32mI (2974) mmWave_feature: Got Target Info - Number of targets: 1[0m
+[0;32mI (2974) mmWave_feature: Heart rate detected[0m
+HR_Filtered: 91.50
+heart_phase_____: 0.09
+Total Target: 1
+  move_speed: 0.50 cm/s
+[0;32mI (3174) mmWave_feature: Human Detected[0m
+[0;32mI (3174) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: -2.00 cm/s
+[0;32mI (3364) mmWave_feature: Human Detected[0m
+[0;32mI (3364) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: -1.50 cm/s
+[0;32mI (3564) mmWave_feature: Human Detected[0m
+[0;32mI (3574) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: -1.50 cm/s
+[0;32mI (3764) mmWave_feature: Human Detected[0m
+[0;32mI (3764) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: -1.50 cm/s
+[0;32mI (3964) mmWave_feature: Human Detected[0m
+[0;32mI (3974) mmWave_feature: Got Target Info - Number of targets: 1[0m
+[0;32mI (3974) mmWave_feature: Heart rate detected[0m
+HR_Filtered: 90.60
+heart_phase_____: -0.07
+Total Target: 1
+  move_speed: -1.50 cm/s
+[0;32mI (4164) mmWave_feature: Human Detected[0m
+[0;32mI (4174) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: 0.06
+Total Target: 1
+  move_speed: -1.50 cm/s
+[0;32mI (4364) mmWave_feature: Human Detected[0m
+[0;32mI (4364) mmWave_feature: Got Target Info - Number of targets: 1[0m
+[0;32mI (4374) mmWave_feature: Heart rate detected[0m
+HR_Filtered: 89.67
+heart_phase_____: -0.63
+Total Target: 1
+  move_speed: -1.50 cm/s
+[0;32mI (4564) mmWave_feature: Human Detected[0m
+[0;32mI (4574) mmWave_feature: Got Target Info - Number of targets: 1[0m
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (4764) mmWave_feature: Human Detected[0m
+[0;32mI (4774) mmWave_feature: Got Target Info - Number of targets: 1[0m
+heart_phase_____: -0.05
+Total Target: 1
+  move_speed: 0.00 cm/s
+[0;32mI (4964) mmWave_feature: Human Detected[0m
+[0;32mI (4964) mmWave_feature: No one detected[0m
+[0;32mI (4974) mmWave_feature: ----- No one here -----[0m
+[0;32mI (5164) mmWave_feature: Human Detected[0m
+[0;32mI (5164) mmWave_feature: No one detected[0m
+[0;32mI (5174) mmWave_feature: ----- No one here -----[0m
+[0;32mI (5364) mmWave_feature: Human Detected[0m
+[0;32mI (5364) mmWave_feature: No one detected[0m
+[0;32mI (5374) mmWave_feature: ----- No one here -----[0m
+[0;32mI (5564) mmWave_feature: Human Detected[0m
+[0;32mI (5564) mmWave_feature: No one detected[0m
+[0;32mI (5574) mmWave_feature: ----- No one here -----[0m
+[0;32mI (5764) mmWave_feature: Human Detected[0m
+[0;32mI (5764) mmWave_feature: No one detected[0m
+[0;32mI (5774) mmWave_feature: ----- No one here -----[0m
+[0;32mI (5964) mmWave_feature: Human Detected[0m
+[0;32mI (5964) mmWave_feature: No one detected[0m
+[0;32mI (5974) mmWave_feature: ----- No one here -----[0m
+[0;32mI (6164) mmWave_feature: Human Detected[0m
+[0;32mI (6164) mmWave_feature: No one detected[0m
+[0;32mI (6174) mmWave_feature: ----- No one here -----[0m
+[0;32mI (6364) mmWave_feature: Human Detected[0m
+[0;32mI (6364) mmWave_feature: No one detected[0m
+[0;32mI (6374) mmWave_feature: ----- No one here -----[0m
+[0;32mI (6564) mmWave_feature: Human Detected[0m
+[0;32mI (6564) mmWave_feature: No one detected[0m
+[0;32mI (6574) mmWave_feature: ----- No one here -----[0m
+[0;32mI (6764) mmWave_feature: Human Detected[0m
+[0;32mI (6764) mmWave_feature: No one detected[0m
+[0;32mI (6774) mmWave_feature: ----- No one here -----[0m
+[0;32mI (6964) mmWave_feature: Human Detected[0m
+[0;32mI (6974) mmWave_feature: No one detected[0m
+[0;32mI (6974) mmWave_feature: ----- No one here -----[0m
+[0;32mI (7164) mmWave_feature: Human Detected[0m
+[0;32mI (7164) mmWave_feature: No one detected[0m
+[0;32mI (7174) mmWave_feature: ----- No one here -----[0m
+[0;32mI (7364) mmWave_feature: Human Detected[0m
+[0;32mI (7364) mmWave_feature: No one detected[0m
+[0;32mI (7374) mmWave_feature: ----- No one here -----[0m
